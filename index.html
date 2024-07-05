@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="nav-title">
+            <h1>Riz's List</h1>
+        </div>
+        <div id="profile">
+            <p><span id="userName"></span></p>
+            <p><span id="userJob"></span></p>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="time">
+                <p>Current Date: <span id="currentDate"></span></p>
+            </div>
+            <div class="tambahList">
+                <textarea id="taskInput" placeholder="Tambahkan To Do Baru"></textarea>
+                <select id="prioritySelect">
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+                <button class="addTask" id="addTaskBtn">Tambah Tugas</button>
+            </div>
+            <div class="listAktif">
+                <h2>To-Do List</h2>
+                <ul id="taskList"></ul>
+                <h2>Done</h2>
+                <ul id="doneList"></ul>
+                <button class="delete-btn" id="deleteAllBtn">Hapus Semua List</button>
+            </div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
